@@ -1,0 +1,43 @@
+// Button Component Stylesheet
+// ========================================
+
+.button {
+
+  width: 20%;
+  text-align: center;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  margin: $spacer-s;
+  font-family: $secondary-font;
+  border-radius: $spacer-m;
+  padding: $spacer-s;
+
+  &--primary {
+
+    background-color: $lightpurple;
+    color: white;
+
+    &:hover {
+      background-color: $yellow;
+      color: $purple;
+    }
+  }
+
+  &--secondary {
+    background-color: $yellow;
+    color: $purple;
+
+    &:hover {
+      background-color: $lightpurple;
+      color: white;
+    }
+  }
+
+  &--disabled {
+    background-color: $gray;
+    color: $lightpurple;
+  }
+
+}

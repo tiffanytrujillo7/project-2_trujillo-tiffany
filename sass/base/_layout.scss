@@ -1,0 +1,32 @@
+
+body {
+
+}
+
+.header {
+
+}
+
+.main {
+  padding: $spacer-m;
+
+  &__section {
+    margin: $spacer-lg $reset-0;
+
+    &--index {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: $spacer-m;
+    }
+  }
+}
+
+.item-container {
+    margin: $spacer-m $reset-0;
+}
+
+.footer {
+
+}

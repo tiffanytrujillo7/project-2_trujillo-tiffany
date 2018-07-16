@@ -1,0 +1,20 @@
+// Form Elements Stylesheet
+// ========================================
+
+label, option, select, input {
+  color: $purple;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  width: 20%;
+}
+
+span {
+  padding-right: $spacer-lg;
+}
+
+input:valid+span:after {
+  position: absolute;
+  content: '✖';
+  padding-left: $spacer-xs
+  color: $red;
+}
