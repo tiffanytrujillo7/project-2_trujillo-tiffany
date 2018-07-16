@@ -1,11 +1,10 @@
 # Project 2 - What's Poppin'
 
 #### Link to repository
-[github link here](www.thisisyourgithublink.com)
+[Github link here](https://github.com/tiffanytrujillo7/project-2_trujillo-tiffany)
 
 #### Link to website
-[Website Link](www.thisisyourwebsite.com)
-<!-- Edit this for Project 2 - Part 3 -->
+[Website Link](http://tifftrujillo.com/project-2_trujillo-tiffany)
 
 #### Instructions on how to view
 1. `git clone` the repository to view it locally.
