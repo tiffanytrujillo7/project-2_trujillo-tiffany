@@ -1,10 +1,23 @@
 
 body {
-
+  background-color: white;
 }
 
 .header {
 
+}
+
+.nav {
+  background-color: pink;
+  display: inline-flex;
+  padding: 1.3rem 0;
+  text-align: center;
+
+    &__listItem {
+      color: $purple;
+      font-size: 1.5rem;
+      font-family: $primary-font;
+    }
 }
 
 .main {
