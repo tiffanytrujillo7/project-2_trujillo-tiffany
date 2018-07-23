@@ -4,37 +4,95 @@ body {
 }
 
 .header {
-
+  display: flex;
+  align-items: center;
 }
 
+.logo img {
+  display: inline-block;
+  width: 150px;
+  margin-left: $spacer-m;
+}
+
+// Desktop Nav //
+
 .nav {
-  background-color: pink;
-  display: inline-flex;
-  padding: 1.3rem 0;
-  text-align: center;
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
 
     &__listItem {
+      display: inline;
+      padding: $spacer-m;
       color: $purple;
       font-size: 1.5rem;
+      font-weight: bold;
       font-family: $primary-font;
     }
 }
 
+// END Desktop Nav //
+
+// Mobile Nav Styling //
+
+
+
+// END Mobile Nav Styling //
+
 .main {
   padding: $spacer-m;
+  background-color: $lightpurple;
+  height: 75vh;
 
   &__section {
     margin: $spacer-lg $reset-0;
+    background-color: $lightpurple;
 
     &--index {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
-      padding: $spacer-m;
+      padding: $spacer-xxl
     }
   }
 }
+
+// Home Page Form //
+
+form {
+  align-items: center;
+  text-align: center;
+}
+
+input[type="submit"] {
+  font-weight: bold;
+  background: $yellow;
+  color: $purple;
+  font-size: 1.5rem;
+  width: 40%;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: $spacer-xs;
+
+    &:hover {
+          color: $yellow;
+          background-color: $purple;
+      }
+}
+
+input[type="tel"] {
+  width: 50%;
+  max-width: 500px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: $spacer-xs;
+}
+
+input[type="tel"]:focus {
+  border: 1px solid black;
+}
+
+// END Home Page Form //
 
 .item-container {
     margin: $spacer-m $reset-0;

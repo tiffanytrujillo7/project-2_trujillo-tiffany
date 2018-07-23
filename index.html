@@ -3,24 +3,40 @@
   <head>
     <title>What's Poppin'</title>
     <link href="css/main.css" rel="stylesheet">
+    <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="shortcut icon" href="images/champagne.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header class="header">
+      <div class="logo">
+        <img src="images/finallogo_WP.png" alt="logo">
+      </div>
+      <nav class="nav">
+        <ul>
+          <a href="#"><li class="nav__listItem">Home</li></a>
+          <a href="#"><li class="nav__listItem">About</li></a>
+          <a href="#"><li class="nav__listItem">Contact</li></a>
+        </ul>
+      </nav>
+
+      <!--MOBILE NAV-->
+
+      <!--END MOBILE NAV-->
     </header>
-    <div class="nav">
-      <ul>
-        <li class="nav__listItem">Home</li>
-        <li class="nav__listItem">About</li>
-        <li class="nav__listItem">Contact</li>
-      </ul>
-    </div>
     <main class="main">
       <section class="main__section">
         <div class="main__section--index">
+            <h1>Feeling lost in a new city? Find out What’s Poppin’ near you!</h1>
         </div>
+        <form>
+            <p>
+              <input type="tel" id="phone_num" name="phone_num" placeholder="Enter your phone number" required/>
+            <input type="submit" value="Send Download Link Now!"/>
+          </p>
+        </form>
       </section>
     </main>
     <footer class="footer">
