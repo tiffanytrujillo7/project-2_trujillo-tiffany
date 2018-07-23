@@ -3,17 +3,18 @@
   <head>
     <title>What's Poppin'</title>
     <link href="css/main.css" rel="stylesheet">
-    <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="shortcut icon" href="images/champagne.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header class="header">
+    <header class="mainheader">
       <div class="logo">
         <img src="images/finallogo_WP.png" alt="logo">
       </div>
+      <p><a href="#">Log In</a><a href="#">Sign Up</a></p>
       <nav class="nav">
         <ul>
           <a href="#"><li class="nav__listItem">Home</li></a>
@@ -23,8 +24,17 @@
       </nav>
 
       <!--MOBILE NAV-->
-
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+        <div class="mobilemenu">
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
       <!--END MOBILE NAV-->
+
     </header>
     <main class="main">
       <section class="main__section">
@@ -41,5 +51,6 @@
     </main>
     <footer class="footer">
     </footer>
+  <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

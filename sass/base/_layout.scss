@@ -3,9 +3,20 @@ body {
   background-color: white;
 }
 
-.header {
+.mainheader {
   display: flex;
   align-items: center;
+}
+
+.mainheader p {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: auto;
+  padding: $spacer-m;
+  color: $purple;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: $primary-font;
 }
 
 .logo img {
@@ -18,7 +29,6 @@ body {
 
 .nav {
   display: flex;
-  margin-left: auto;
   justify-content: flex-end;
 
     &__listItem {
@@ -35,14 +45,57 @@ body {
 
 // Mobile Nav Styling //
 
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:$spacer-lg;
+  color:$purple;
+  border:0;
+  font-size:3em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding: $spacer-lg;
+  color:$purple;
+  border:0;
+  font-size:4em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.mobilemenu{z-index:1000000; font-family: $primary-font; font-weight:bold; width:100%; background:$yellow;  position:absolute; text-align:center; font-size:12px;}
+.mobilemenu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.mobilemenu li {display: block;  color: $purple; font-size: 1.5rem; padding:$spacer-m; border-bottom:#dddddd 1px solid;}
+.mobilemenu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.mobilemenu ul li a { text-decoration:none;  margin: 0px; color:$purple;}
+.mobilemenu ul li a:hover {  color: #666; text-decoration:none;}
+.mobilemenu a{text-decoration:none; color:#666;}
+.mobilemenu a:hover{text-decoration:none; color:#666;}
 
+.glyphicon-home{
+  color:white;
+  margin-top:5px;
+  margin:0 auto;
+}
 
 // END Mobile Nav Styling //
 
 .main {
   padding: $spacer-m;
   background-color: $lightpurple;
-  height: 75vh;
+  height: 80vh;
 
   &__section {
     margin: $spacer-lg $reset-0;
@@ -86,6 +139,7 @@ input[type="tel"] {
   font-size: 1.5rem;
   border-radius: 10px;
   padding: $spacer-xs;
+  text-align: center;
 }
 
 input[type="tel"]:focus {
@@ -100,4 +154,48 @@ input[type="tel"]:focus {
 
 .footer {
 
+}
+
+// Temporary Spot for Media Queries Because Mixins didn't work //
+
+@media only screen and (min-width: 790px) {
+  .hamburger, .cross {
+      display: none;
+  }
+}
+
+ @media only screen and (max-width: 789px) {
+  .nav {
+      display: none;
+  }
+
+.main__section--index h1 {
+  font-size: 2rem;
+  margin: $spacer-xs;
+  }
+
+  .main {
+    padding: $spacer-xs;
+
+    &__section {
+      margin: $spacer-xxl $reset-0;
+
+      &--index {
+        padding: $spacer-s
+      }
+    }
+  }
+
+  input[type="submit"] {
+    font-size: 1rem;
+    width: 60%;
+    padding: $spacer-m;
+    margin-top: $spacer-s;
+  }
+
+  input[type="tel"] {
+    width: 55%;
+    font-size: 1rem;
+    padding: $spacer-m;
+  }
 }

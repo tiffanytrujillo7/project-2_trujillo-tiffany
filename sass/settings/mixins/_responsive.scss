@@ -1,8 +1,2 @@
 // Responsive Mixin Settings Stylesheet
 // ========================================
-
-@mixin media($media) {
-    @media only screen and #{$media} {
-        @content;
-    }
-}
