@@ -19,6 +19,11 @@ body {
   font-family: $primary-font;
 }
 
+.mainheader a {
+  font-size: 1.5rem;
+  margin-top: $spacer-xlg;
+}
+
 .logo img {
   display: inline-block;
   width: 150px;
@@ -156,20 +161,20 @@ input[type="tel"]:focus {
 
 }
 
-// Temporary Spot for Media Queries Because Mixins didn't work //
+// Media Queries //
 
-@media only screen and (min-width: 790px) {
+@include media($large) {
   .hamburger, .cross {
       display: none;
   }
 }
 
- @media only screen and (max-width: 789px) {
+@include media($medium) {
   .nav {
       display: none;
   }
 
-.main__section--index h1 {
+ .main__section--index h1 {
   font-size: 2rem;
   margin: $spacer-xs;
   }

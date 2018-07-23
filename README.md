@@ -15,6 +15,7 @@
 ## Project 2 - Part 3
 
 #### Resources
+- Hamburger Menu [Link](https://codepen.io/g13nn/pen/eHGEF)
 
 #### Deductions
 
