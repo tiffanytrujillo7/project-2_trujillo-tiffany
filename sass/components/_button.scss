@@ -2,32 +2,42 @@
 // ========================================
 
 .button {
-
-  width: 20%;
+  height: 600px;
   text-align: center;
   border: none;
   font-size: 1.5rem;
   color: white;
   text-decoration: none;
   margin: $spacer-s;
-  font-family: $secondary-font;
-  border-radius: $spacer-m;
+  font-family: $primary-font;
+  border-radius: 15px;
   padding: $spacer-s;
 
   &--primary {
 
-    background-color: $lightpurple;
-    color: white;
+    background-color: $yellow;
+    color: $purple;
+    width: 350px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: $primary-font;
 
     &:hover {
-      background-color: $yellow;
-      color: $purple;
+      background-color: $purple;
+      color: $yellow;
     }
   }
 
   &--secondary {
     background-color: $yellow;
     color: $purple;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-family: $secondary-font;
+    display: block;
+    margin: auto;
 
     &:hover {
       background-color: $lightpurple;
@@ -38,6 +48,12 @@
   &--disabled {
     background-color: $gray;
     color: $lightpurple;
+    cursor: not-allowed;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-family: $secondary-font;
+    margin: auto;
   }
 
 }

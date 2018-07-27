@@ -6,6 +6,7 @@ body {
 .mainheader {
   display: flex;
   align-items: center;
+  color: white;
 }
 
 .mainheader p {
@@ -122,21 +123,6 @@ form {
   text-align: center;
 }
 
-input[type="submit"] {
-  font-weight: bold;
-  background: $yellow;
-  color: $purple;
-  font-size: 1.5rem;
-  width: 40%;
-  max-width: 400px;
-  border-radius: 10px;
-  padding: $spacer-xs;
-
-    &:hover {
-          color: $yellow;
-          background-color: $purple;
-      }
-}
 
 input[type="tel"] {
   width: 50%;
@@ -157,8 +143,94 @@ input[type="tel"]:focus {
     margin: $spacer-m $reset-0;
 }
 
-.footer {
+// Contact Page Layout Styles //
 
+.contact__section h1 {
+  color: $purple;
+}
+
+.contact__section h2 {
+  text-align: center;
+}
+
+.contact__section--form {
+  width: 60%;
+  background-color: $lightpurple;
+  margin: auto;
+  border-radius: $spacer-m;
+  padding: $spacer-m;
+
+}
+
+.contact__section--form label {
+  color: white;
+}
+
+input, label, select, textarea {
+    display: inline-block;
+}
+
+input[type=text], select, textarea {
+    width: 70%;
+    padding: $spacer-s;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: $spacer-m;
+    margin: $spacer-m;
+
+}
+
+.contact__section--other {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: $spacer-m;
+  text-align: center;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+}
+
+
+// END Contact Page Layout Styles //
+
+footer {
+  background-color: $lightpurple;
+  color: white;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto auto auto;
+  padding: $spacer-m;
+  text-align: center;
+
+  &--grid-item {
+    padding: $spacer-xs;
+  }
+}
+
+.footer--grid-item img {
+  width: 50px;
+}
+
+.footer__listItem {
+  color: white;
+}
+
+#searchicon {
+  width: 20px;
+}
+
+
+
+footer input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
 }
 
 // Media Queries //
@@ -191,16 +263,33 @@ input[type="tel"]:focus {
     }
   }
 
-  input[type="submit"] {
-    font-size: 1rem;
+.button--primary {
     width: 60%;
-    padding: $spacer-m;
-    margin-top: $spacer-s;
+    margin-top: $spacer-m;
   }
 
   input[type="tel"] {
-    width: 55%;
+    width: 60%;
     font-size: 1rem;
     padding: $spacer-m;
+  }
+
+  .contact__section--form {
+    width: 80%;
+  }
+
+  input[type=text], select, textarea {
+      width: 70%;
+      padding: $spacer-m;
+      margin: $spacer-s;
+
+  }
+
+  .contact__section--other {
+    display: block;
+  }
+
+  footer {
+    display: block;
   }
 }

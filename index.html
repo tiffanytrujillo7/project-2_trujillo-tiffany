@@ -28,9 +28,9 @@
       <button class="cross">&#735;</button>
         <div class="mobilemenu">
           <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Contact</li></a>
+            <a href="#Home"><li>Home</li></a>
+            <a href="#About"><li>About</li></a>
+            <a href="#Contact"><li>Contact</li></a>
           </ul>
         </div>
       <!--END MOBILE NAV-->
@@ -39,17 +39,88 @@
     <main class="main">
       <section class="main__section">
         <div class="main__section--index">
-            <h1>Feeling lost in a new city? Find out What’s Poppin’ near you!</h1>
+            <h1>Feeling lost in a new city? Find out Whats Poppin near you!</h1>
         </div>
         <form>
             <p>
               <input type="tel" id="phone_num" name="phone_num" placeholder="Enter your phone number" required/>
-            <input type="submit" value="Send Download Link Now!"/>
+            <button class="button--primary"> Send Download Link Now! </button>
           </p>
         </form>
       </section>
     </main>
-    <footer class="footer">
+
+    <div class="#Contact">
+      <section class="contact__section">
+        <h1>Contact Us</h1>
+        <h2>Form</h2>
+        <section class="contact__section--form">
+        <form>
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone" placeholder="Your Phone Number..">
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Your Email..">
+
+          <label for="contact">Your Preferred Method of Contact:</label>
+          <select id="contact" name="contact">
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+            <option value="text">Text</option>
+          </select>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+          <button class="button--secondary">Submit</button>
+          <button class="button--disabled">Reset</button>
+        </form>
+      </section>
+      <h2>Or Contact Us This Way!</h2>
+      <section class="contact__section--other">
+        <div class="grid-item">
+          <h3>Location:</h3>
+          <a href="https://www.google.com/maps">1394 SW 68th Court
+            Miami, Florida 33129</a>
+        </div>
+        <div class="grid-item">
+          <h3>Phone:</h3>
+          <p>305-434-4543</p>
+        </div>
+        <div class="grid-item">
+          <h3>Email:</h3>
+          <a href="mailto:whatspoppin@gmail.com">Whatspoppin@gmail.com</a>
+        </div>
+
+
+      </section>
+      </section>
+    </div>
+
+
+    <footer>
+      <div class="footer--grid-item">
+        <img src="images/search.png" id="searchicon" alt="search">
+        <input type="text" placeholder="Search..">
+      </div>
+      <div class="footer--grid-item">
+        <ul>
+          <a href="#"><li class="footer__listItem">Home</li></a>
+          <a href="#"><li class="footer__listItem">About</li></a>
+          <a href="#"><li class="footer__listItem">Contact</li></a>
+        </ul>
+      </div>
+      <div class="footer--grid-item">
+        <img src="images/facebook.png" alt="facebook">
+        <img src="images/instagram.png" alt="instagram">
+        <img src="images/twitter.png" alt="twitter">
+      </div>
     </footer>
   <script type="text/javascript" src="js/main.js"></script>
   </body>
