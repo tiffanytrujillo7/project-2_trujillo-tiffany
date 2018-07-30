@@ -16,6 +16,7 @@
 
 #### Resources
 - Hamburger Menu [Link](https://codepen.io/g13nn/pen/eHGEF)
+- CSS Grid Resource [Link](https://www.w3schools.com/css/css_grid.asp)
 
 #### Deductions
 
