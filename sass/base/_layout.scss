@@ -156,6 +156,7 @@ input[type="tel"] {
   &__works {
     display: block;
     text-align: center;
+    padding: $spacer-s;
   }
 
   &__works img {
@@ -163,8 +164,22 @@ input[type="tel"] {
   }
 
   &__connect {
+    display: block;
+    background-color: $lightpurple;
+    text-align: center;
+    padding: $spacer-s;
+
+    h1, h2 {
+      color: white;
+    }
+
+    img {
+      width: 80%;
+      padding: $spacer-s;
+    }
 
   }
+
 
   &__trio {
 
@@ -275,6 +290,7 @@ footer input[type=text] {
 
     &__works {
       display: flex;
+      padding: $spacer-lg;
     }
 
     &__works--grid-item {
@@ -285,6 +301,21 @@ footer input[type=text] {
 
     &__works img {
       width: 80%;
+    }
+
+    &__connect {
+      display: flex;
+      padding: $spacer-lg;
+    }
+
+      &--grid-item {
+        width: 50%;
+        margin: auto;
+        padding: $spacer-s;
+      }
+
+    &__connect img {
+      width: 300px;
     }
   }
 }
