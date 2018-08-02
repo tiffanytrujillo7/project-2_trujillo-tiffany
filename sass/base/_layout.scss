@@ -378,7 +378,19 @@ footer input[type=text] {
     &__trio {
       display: flex;
       margin: auto;
-      height: 50vh;
+      padding: 70px 0;
+    }
+
+    &__trio p {
+        font-size: 1.6rem;
+      }
+
+    &__trio h1 {
+      font-size: 3rem;
+    }
+
+    &__trio h2 {
+      font-size: 2.8rem;
     }
 
   .contact__section--form {
