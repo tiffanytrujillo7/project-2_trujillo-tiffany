@@ -34,7 +34,7 @@ body {
 // Desktop Nav //
 
 .nav {
-  display: flex;
+  display: none;
   justify-content: flex-end;
 
     &__listItem {
@@ -52,19 +52,19 @@ body {
 // Mobile Nav Styling //
 
 .hamburger{
-  background:none;
-  position:absolute;
-  top:0;
-  right:0;
-  line-height:45px;
-  padding:$spacer-lg;
-  color:$purple;
-  border:0;
-  font-size:3em;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: $spacer-lg;
+  color: $purple;
+  border: 0;
+  font-size: 3em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
 }
 .cross{
   background:none;
@@ -99,20 +99,24 @@ body {
 // END Mobile Nav Styling //
 
 .main {
-  padding: $spacer-m;
+  padding: $spacer-xs;
   background-color: $lightpurple;
   height: 80vh;
 
   &__section {
-    margin: $spacer-lg $reset-0;
+    margin: $spacer-xxl $reset-0;
     background-color: $lightpurple;
 
     &--index {
+      padding: $spacer-s;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: $spacer-xxl
     }
+
+      &--index h1 {
+        font-size: 2rem;
+      }
   }
 }
 
@@ -123,19 +127,25 @@ form {
   text-align: center;
 }
 
-
-input[type="tel"] {
-  width: 50%;
-  max-width: 500px;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  padding: $spacer-xs;
-  text-align: center;
-}
-
 input[type="tel"]:focus {
   border: 1px solid black;
 }
+
+input[type="tel"] {
+  width: 75%;
+  font-size: 1rem;
+  padding: $spacer-m;
+  max-width: 500px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.button--primary {
+  width: 60%;
+  margin-top: $spacer-m;
+}
+
 
 // END Home Page Form //
 
@@ -145,16 +155,8 @@ input[type="tel"]:focus {
 
 // Contact Page Layout Styles //
 
-.contact__section h1 {
-  color: $purple;
-}
-
-.contact__section h2 {
-  text-align: center;
-}
-
 .contact__section--form {
-  width: 60%;
+  width: 90%;
   background-color: $lightpurple;
   margin: auto;
   border-radius: $spacer-m;
@@ -163,31 +165,35 @@ input[type="tel"]:focus {
 
 }
 
-.contact__section--form label {
-  color: white;
+.contact__section h1 {
+  color: $purple;
+}
+
+input[type=text], select, textarea {
+    width: 70%;
+    padding: $spacer-m;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin: $spacer-m;
+
 }
 
 input, label, select, textarea {
     display: inline-block;
 }
 
-input[type=text], select, textarea {
-    width: 70%;
-    padding: $spacer-s;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: $spacer-m;
-    margin: $spacer-m;
-
+.contact__section--other {
+  display: block;
+  text-align: center;
 }
 
-.contact__section--other {
-  display: grid;
-  grid-column-gap: 20px;
-  grid-template-columns: auto auto auto;
-  padding: $spacer-m;
+.contact__section--form label {
+  color: white;
+}
+
+.contact__section h2 {
   text-align: center;
 }
 
@@ -196,13 +202,12 @@ input[type=text], select, textarea {
   font-size: 30px;
 }
 
-
 // END Contact Page Layout Styles //
 
 footer {
   background-color: $lightpurple;
   color: white;
-  display: grid;
+  display: block;
   grid-column-gap: 5px;
   grid-template-columns: auto auto auto;
   padding: $spacer-m;
@@ -236,61 +241,45 @@ footer input[type=text] {
 
 // Media Queries //
 
-@include media($large) {
+@include media($medium) {
   .hamburger, .cross {
       display: none;
   }
-}
 
-@include media($medium) {
   .nav {
-      display: none;
-  }
-
- .main__section--index h1 {
-  font-size: 2rem;
-  margin: $spacer-xs;
+    display: flex;
   }
 
   .main {
-    padding: $spacer-xs;
+    padding: $spacer-lg;
+    background-color: $lightpurple;
 
     &__section {
       margin: $spacer-xxl $reset-0;
 
       &--index {
-        padding: $spacer-s
+        padding: $spacer-xlg;
       }
+
+        &--index h1 {
+          font-size: 3rem;
+        }
     }
-  }
-
-.button--primary {
-    width: 60%;
-    margin-top: $spacer-m;
-  }
-
-  input[type="tel"] {
-    width: 60%;
-    font-size: 1rem;
-    padding: $spacer-m;
   }
 
   .contact__section--form {
     width: 80%;
   }
 
-  input[type=text], select, textarea {
-      width: 70%;
-      padding: $spacer-m;
-      margin: $spacer-s;
-
-  }
-
   .contact__section--other {
-    display: block;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: auto auto auto;
+    padding: $spacer-m;
+    text-align: center;
   }
 
   footer {
-    display: block;
+    display: grid;
   }
 }
