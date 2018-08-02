@@ -17,9 +17,9 @@
       <p><a href="#">Log In</a><a href="#">Sign Up</a></p>
       <nav class="nav">
         <ul>
-          <a href="#"><li class="nav__listItem">Home</li></a>
-          <a href="#"><li class="nav__listItem">About</li></a>
-          <a href="#"><li class="nav__listItem">Contact</li></a>
+          <a href="#home" class="smoothScroll"><li class="nav__listItem">Home</li></a>
+          <a href="#about" class="smoothScroll"><li class="nav__listItem">About</li></a>
+          <a href="#contact" class="smoothScroll"><li class="nav__listItem">Contact</li></a>
         </ul>
       </nav>
 
@@ -28,15 +28,15 @@
       <button class="cross">&#735;</button>
         <div class="mobilemenu">
           <ul>
-            <a href="#Home"><li>Home</li></a>
-            <a href="#About"><li>About</li></a>
-            <a href="#Contact"><li>Contact</li></a>
+            <a href="#home" class="smoothScroll"><li>Home</li></a>
+            <a href="#about" class="smoothScroll"><li>About</li></a>
+            <a href="#contact" class="smoothScroll"><li>Contact</li></a>
           </ul>
         </div>
       <!--END MOBILE NAV-->
 
     </header>
-    <main class="main">
+    <main class="main" id="home">
       <section class="main__section">
         <div class="main__section--index">
             <h1>Feeling lost in a new city? Find out Whats Poppin near you!</h1>
@@ -50,7 +50,7 @@
       </section>
     </main>
 
-    <div class="#about">
+    <div class="about" id="about">
 
       <section class="about__works">
         <div class="about__works--grid-item">
@@ -109,7 +109,7 @@
 
     </div>
 
-    <div class="#contact">
+    <div class="contact" id="contact">
       <section class="contact__section">
         <h1>Contact Us</h1>
         <h2>Form</h2>
@@ -170,9 +170,9 @@
       </div>
       <div class="footer--grid-item">
         <ul>
-          <a href="#"><li class="footer__listItem">Home</li></a>
-          <a href="#"><li class="footer__listItem">About</li></a>
-          <a href="#"><li class="footer__listItem">Contact</li></a>
+          <a href="#home" class="smoothScroll"><li class="footer__listItem">Home</li></a>
+          <a href="#about" class="smoothScroll"><li class="footer__listItem">About</li></a>
+          <a href="#contact" class="smoothScroll"><li class="footer__listItem">Contact</li></a>
         </ul>
       </div>
       <div class="footer--grid-item">
@@ -182,5 +182,7 @@
       </div>
     </footer>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
   </body>
 </html>
