@@ -114,9 +114,9 @@ body {
       align-items: center;
     }
 
-      &--index h1 {
-        font-size: 2rem;
-      }
+    &--index h1 {
+      color: white;
+    }
   }
 }
 
@@ -148,6 +148,35 @@ input[type="tel"] {
 
 
 // END Home Page Form //
+
+// About Page Styling //
+
+.about {
+
+  &--works {
+    display: block;
+    text-align: center;
+  }
+
+  &--works img {
+    width: 60%;
+  }
+
+  &--connect {
+
+  }
+
+  &--trio {
+
+  }
+
+  &--testimonials {
+
+  }
+
+}
+
+// END About Page Styling //
 
 .item-container {
     margin: $spacer-m $reset-0;
