@@ -181,7 +181,6 @@ input[type="tel"] {
 
   }
 
-
   &__trio {
     display: block;
     text-align: center;
@@ -189,7 +188,19 @@ input[type="tel"] {
   }
 
   &__testimonials {
+    background-color: $lightpurple;
+    text-align: center;
+    padding: $spacer-m;
 
+    h1 {
+      color: white;
+    }
+
+    img {
+      width: 50%;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
   }
 
 }
@@ -304,6 +315,17 @@ footer input[type=text] {
 
     &__works img {
       width: 80%;
+    }
+
+    &__testimonials {
+
+    }
+
+    &__testimonials--grid-item {
+      display: grid;
+      width: 50%;
+      margin: auto;
+      padding: $spacer-s;
     }
   }
 }
