@@ -176,6 +176,7 @@ input[type="tel"] {
     img {
       width: 80%;
       padding: $spacer-s;
+      max-width: 400px;
     }
 
   }
@@ -302,21 +303,6 @@ footer input[type=text] {
     &__works img {
       width: 80%;
     }
-
-    &__connect {
-      display: flex;
-      padding: $spacer-lg;
-    }
-
-      &--grid-item {
-        width: 50%;
-        margin: auto;
-        padding: $spacer-s;
-      }
-
-    &__connect img {
-      width: 300px;
-    }
   }
 }
 
@@ -348,6 +334,11 @@ footer input[type=text] {
 
   .about {
 
+    &__works {
+      padding-left: $spacer-xxl;
+      padding-right: $spacer-xxl;
+    }
+
     &__works--grid-item {
       width: 50%;
       margin: auto;
@@ -359,7 +350,7 @@ footer input[type=text] {
     }
 
     &__works p {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
 
     &__works h1 {
@@ -369,7 +360,18 @@ footer input[type=text] {
     &__works h2 {
       font-size: 2.8rem;
     }
-  }
+
+    &__connect p {
+        font-size: 1.6rem;
+      }
+
+    &__connect h1 {
+      font-size: 3rem;
+    }
+
+    &__connect h2 {
+      font-size: 2.8rem;
+    }
 
   .contact__section--form {
     width: 80%;
@@ -386,4 +388,26 @@ footer input[type=text] {
   footer {
     display: grid;
   }
+}
+
+@include media($large) {
+
+  .about {
+
+    &__connect {
+      display: flex;
+      padding: $spacer-xxl;
+    }
+
+      &--grid-item {
+        width: 50%;
+        margin: auto;
+        padding: $spacer-s;
+      }
+
+    &__connect img {
+      width: 400px;
+    }
+  }
+}
 }
