@@ -182,7 +182,6 @@ input[type="tel"] {
   }
 
   &__trio {
-    display: block;
     text-align: center;
     padding: $spacer-s;
   }
@@ -198,6 +197,7 @@ input[type="tel"] {
 
     img {
       width: 50%;
+      max-width: 250px;
       border-radius: 50%;
       border: 2px solid white;
     }
@@ -316,17 +316,6 @@ footer input[type=text] {
     &__works img {
       width: 80%;
     }
-
-    &__testimonials {
-
-    }
-
-    &__testimonials--grid-item {
-      display: grid;
-      width: 50%;
-      margin: auto;
-      padding: $spacer-s;
-    }
   }
 }
 
@@ -415,6 +404,27 @@ footer input[type=text] {
       font-size: 2.8rem;
     }
 
+    &__testimonials {
+      display: flex;
+      padding: $spacer-lg;
+    }
+
+    &__testimonials p {
+        font-size: 1.6rem;
+      }
+
+    &__testimonials h1 {
+      font-size: 3rem;
+      margin: auto;
+    }
+
+    &__testimonials--grid-item {
+      width: 30%;
+      margin: auto;
+      padding: $spacer-s;
+    }
+  }
+
   .contact__section--form {
     width: 80%;
   }
@@ -451,5 +461,4 @@ footer input[type=text] {
       width: 400px;
     }
   }
-}
 }
