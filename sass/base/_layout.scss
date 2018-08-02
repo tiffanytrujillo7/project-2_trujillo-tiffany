@@ -153,24 +153,24 @@ input[type="tel"] {
 
 .about {
 
-  &--works {
+  &__works {
     display: block;
     text-align: center;
   }
 
-  &--works img {
+  &__works img {
     width: 60%;
   }
 
-  &--connect {
+  &__connect {
 
   }
 
-  &--trio {
+  &__trio {
 
   }
 
-  &--testimonials {
+  &__testimonials {
 
   }
 
@@ -270,6 +270,25 @@ footer input[type=text] {
 
 // Media Queries //
 
+@include media($small) {
+  .about {
+
+    &__works {
+      display: flex;
+    }
+
+    &__works--grid-item {
+      width: 50%;
+      margin: auto;
+      padding: $spacer-s;
+    }
+
+    &__works img {
+      width: 80%;
+    }
+  }
+}
+
 @include media($medium) {
   .hamburger, .cross {
       display: none;
@@ -293,6 +312,31 @@ footer input[type=text] {
         &--index h1 {
           font-size: 3rem;
         }
+    }
+  }
+
+  .about {
+
+    &__works--grid-item {
+      width: 50%;
+      margin: auto;
+      padding: $spacer-s;
+    }
+
+    &__works img {
+      width: 50%;
+    }
+
+    &__works p {
+      font-size: 1.8rem;
+    }
+
+    &__works h1 {
+      font-size: 3rem;
+    }
+
+    &__works h2 {
+      font-size: 2.8rem;
     }
   }
 
