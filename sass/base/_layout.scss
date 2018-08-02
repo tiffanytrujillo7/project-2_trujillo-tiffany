@@ -101,7 +101,6 @@ body {
 .main {
   padding: $spacer-xs;
   background-color: $lightpurple;
-  height: 80vh;
 
   &__section {
     margin: $spacer-xxl $reset-0;
@@ -196,6 +195,8 @@ input[type="tel"] {
     }
 
     img {
+      margin-top: $spacer-m;
+      margin-bottom: $spacer-xs;
       width: 50%;
       max-width: 250px;
       border-radius: 50%;
@@ -288,8 +289,6 @@ footer {
   width: 20px;
 }
 
-
-
 footer input[type=text] {
     padding: 6px;
     border: none;
@@ -360,6 +359,7 @@ footer input[type=text] {
 
     &__works img {
       width: 50%;
+      min-width: 300px;
     }
 
     &__works p {
