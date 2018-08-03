@@ -12,9 +12,9 @@
   <body>
     <header class="mainheader">
       <div class="logo">
-        <img src="images/finallogo_WP.png" alt="logo">
+        <img src="images/finallogo_WP.svg" alt="logo">
       </div>
-      <p><a href="#">Log In</a><a href="#">Sign Up</a></p>
+      <p><a id="signIn" href="#">Log In | Sign Up</a></p>
       <nav class="nav">
         <ul>
           <a href="#home" class="smoothScroll"><li class="nav__listItem">Home</li></a>
@@ -22,6 +22,30 @@
           <a href="#contact" class="smoothScroll"><li class="nav__listItem">Contact</li></a>
         </ul>
       </nav>
+
+      <!-- Sign In or Sign Up Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal__content">
+          <div class="modal--header">
+            <span class="close">&times;</span>
+              <h2>Let's Get Poppin'</h2>
+          </div>
+          <div class="modal--body">
+            <label for="usernamePhone">Username/Phone:</label>
+            <input type="text" id="usernamePhone" name="usernamePhone">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <button class="button--primary" id="modal_button"> Log In </button>
+         </div>
+         <div class="modal--footer">
+           <h3>Haven't signed up yet? No worries!</h3>
+           <button class="button--primary" id="modal_button"> Get Started Now! </button>
+         </div>
+      </div>
+    </div>
 
       <!--MOBILE NAV-->
       <button class="hamburger">&#9776;</button>
@@ -94,15 +118,15 @@
       <section class="about__testimonials">
         <h1>What People Are Saying...</h1>
         <div class="about__testimonials--grid-item">
-            <img src="images/user1.jpg" alt="user1">
+            <img src="images/user1.jpg" alt="user1" class="tooltip" title="This is my image's tooltip message!">
             <p>Quia venima volessint et antiistis deris a dolor sitatur." -User 1</p>
         </div>
         <div class="about__testimonials--grid-item">
-            <img src="images/user2.jpg" alt="user2">
+            <img src="images/user2.jpg" alt="user2" class="tooltip" title="This is my image's tooltip message!">
             <p>Quia venima volessint et antiistis deris a dolor sitatur." -User 1</p>
         </div>
         <div class="about__testimonials--grid-item">
-            <img src="images/user3.jpg" alt="user3">
+            <img src="images/user3.jpg" alt="user3" class="tooltip" title="This is my image's tooltip message!">
             <p>Quia venima volessint et antiistis deris a dolor sitatur." -User 1</p>
         </div>
       </section>
@@ -114,7 +138,7 @@
         <h1>Contact Us</h1>
         <h2>Form</h2>
         <section class="contact__section--form">
-        <form>
+        <form name="contactForm">
           <label for="fname">First Name:</label>
           <input type="text" id="fname" name="firstname" placeholder="Your first name..">
 
@@ -130,7 +154,7 @@
           <label for="contact">Your Preferred Method of Contact:</label>
           <select id="contact" name="contact">
             <option value="phone">Phone</option>
-            <option value="email">Email</option>
+            <option value="email" name="email">Email</option>
             <option value="text">Text</option>
           </select>
 
