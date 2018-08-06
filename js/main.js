@@ -1,4 +1,4 @@
-// Hamburger Menu Code //
+// Hamburger Menu Code Working with jQuery library//
 $(document).ready(function(){
 
 $( ".cross" ).hide();
@@ -15,7 +15,7 @@ $( ".mobilemenu" ).slideToggle( "slow", function() {
 $( ".cross" ).hide();
 $( ".hamburger" ).show();
 });
-});
+})
 
 });
 
@@ -31,8 +31,6 @@ $(document).ready(function(){
       // Store hash
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
@@ -46,7 +44,7 @@ $(document).ready(function(){
 // END Hamburger Menu Code //
 
 
-// Modal JS //
+// Modal JS Code //
 var modal = document.getElementById('myModal');
 
 var btn = document.getElementById("signIn");
@@ -68,7 +66,7 @@ window.onclick = function(event) {
 }
 // END Modal JS Code //
 
-// Form JS Code //
+// Form JQuery Code //
 $(function(){
   $('.input').keyup(function() {
 
@@ -85,5 +83,5 @@ $(function(){
       $('#submit').removeAttr('disabled').addClass('button--primary').removeClass('button--disabled');
     }
   });
-})()
+})
 // END Form JS Code //

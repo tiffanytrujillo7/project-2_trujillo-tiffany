@@ -64,7 +64,6 @@ body {
   font-weight: bold;
   cursor: pointer;
   outline: none;
-  z-index: 10000000000000;
 }
 .cross{
   background:none;
@@ -131,7 +130,7 @@ input[type="tel"]:focus {
 }
 
 input[type="tel"] {
-  width: 75%;
+  width: 80%;
   font-size: 1rem;
   padding: $spacer-m;
   max-width: 500px;
@@ -311,6 +310,7 @@ footer input[type=text] {
       padding: 0;
       border: 1px solid #888;
       width: 80%;
+      max-width: 750px;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
       animation-name: animatetop;
       animation-duration: 0.4s
@@ -326,11 +326,10 @@ footer input[type=text] {
     &--body {
       padding: $spacer-lg;
       background-color: $lightpurple;
-      text-align: center;
 
       label {
         color: white;
-      }
+        }
     }
 
     &--footer {
@@ -343,6 +342,7 @@ footer input[type=text] {
 
 #modal_button {
   width: 250px;
+  margin: auto;
 }
 
 // The Close Button //
