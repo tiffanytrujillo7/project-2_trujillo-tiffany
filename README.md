@@ -23,7 +23,7 @@
 
 #### Comments
 - jQuery plugins used: Smoothscroll & ________.
-- Custom lines of javascript:
-- Custom lines of jQuery:
+- Custom lines of Javascript: Modal Activation/Display
+- Custom lines of jQuery: Disabled/Active Submit Button in Form
 
 ---
