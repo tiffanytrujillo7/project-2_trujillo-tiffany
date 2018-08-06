@@ -22,5 +22,8 @@
 #### Deductions
 
 #### Comments
+- jQuery plugins used: Smoothscroll & ________.
+- Custom lines of javascript:
+- Custom lines of jQuery:
 
 ---
