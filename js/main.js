@@ -85,3 +85,7 @@ $(function(){
   });
 })
 // END Form JS Code //
+
+// Parsley jQuery form Validation code //
+$('#form').parsley(options);
+// END Parsley jQuery form Validation code //

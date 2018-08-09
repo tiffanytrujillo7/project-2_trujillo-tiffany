@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>What's Poppin'</title>
     <link href="css/main.css" rel="stylesheet">
@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="shortcut icon" href="images/champagne.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/parsley.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
   </head>
   <body>
     <header class="mainheader">
@@ -17,9 +19,9 @@
       <p><a id="signIn" href="#">Log In | Sign Up</a></p>
       <nav class="nav">
         <ul>
-          <a href="#home" class="smoothScroll"><li class="nav__listItem">Home</li></a>
-          <a href="#about" class="smoothScroll"><li class="nav__listItem">About</li></a>
-          <a href="#contact" class="smoothScroll"><li class="nav__listItem">Contact</li></a>
+          <li class="nav__listItem"><a href="#home" class="smoothScroll">Home</a></li>
+          <li class="nav__listItem"><a href="#about" class="smoothScroll">About</a></li>
+          <li class="nav__listItem"><a href="#contact" class="smoothScroll">Contact</a></li>
         </ul>
       </nav>
 
@@ -32,13 +34,14 @@
               <h2>Let's Get Poppin'</h2>
           </div>
           <div class="modal--body">
+            <h3>Log In</h3>
             <label for="usernamePhone">Username/Phone:</label>
             <input type="text" id="usernamePhone" name="usernamePhone">
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password">
 
-            <button class="button--primary" id="modal_button"> Log In </button>
+            <button class="button--primary"> Log In </button>
          </div>
          <div class="modal--footer">
            <h3>Haven't signed up yet? No worries!</h3>
@@ -52,9 +55,9 @@
       <button class="cross">&#735;</button>
         <div class="mobilemenu">
           <ul>
-            <a href="#home" class="smoothScroll"><li>Home</li></a>
-            <a href="#about" class="smoothScroll"><li>About</li></a>
-            <a href="#contact" class="smoothScroll"><li>Contact</li></a>
+            <li><a href="#home" class="smoothScroll">Home</a></li>
+            <li><a href="#about" class="smoothScroll">About</a></li>
+            <li><a href="#contact" class="smoothScroll">Contact</a></li>
           </ul>
         </div>
       <!--END MOBILE NAV-->
@@ -119,7 +122,7 @@
         <h1>What People Are Saying...</h1>
         <div class="about__testimonials--grid-item">
             <img src="images/user1.jpg" alt="user1" class="tooltip" title="This is my image's tooltip message!">
-            <p>When I moved to Miami, this app saved my life! I met so many cool people on the app and I knew all the fun places to go on the right days." -User 1</p>
+            <p>When I moved to Miami, this app saved my life! I knew all the fun places to go on the right days." -User 1</p>
         </div>
         <div class="about__testimonials--grid-item">
             <img src="images/user2.jpg" alt="user2" class="tooltip" title="This is my image's tooltip message!">
@@ -133,12 +136,12 @@
 
     </div>
 
-    <div class="contact" id="contact">
+    <div class="contact">
       <section class="contact__section">
         <h1>Contact Us</h1>
-        <h2>Form</h2>
         <section class="contact__section--form">
-        <form name="contactForm" id="form">
+        <form name="contactForm" id="form" data-parsley-validate>
+          <h2>Form</h2>
           <label for="fname">First Name:</label>
           <input type="text" id="fname" name="firstname" placeholder="Your first name.." required class="input">
 
@@ -149,20 +152,20 @@
           <input type="text" id="phone" name="phone" placeholder="Your Phone Number.." required class="input">
 
           <label for="email">Email:</label>
-          <input type="text" id="email" name="email" placeholder="Your Email.." required class="input">
+          <input type="text" id="email" name="email" placeholder="Your Email.." required class="input" data-parsley-type="email">
 
           <label for="contact">Your Preferred Method of Contact:</label>
-          <select id="contact" name="contact" id="method" class="select" required>
-            <option value="phone">Phone</option>
-            <option value="email" name="email">Email</option>
-            <option value="text">Text</option>
+          <select id="contact" name="contact" class="select" required>
+            <option value="">Phone</option>
+            <option value="">Email</option>
+            <option value="">Text</option>
           </select>
 
           <label for="message">Message:</label>
-          <textarea id="message" name="message" placeholder="Write something.." class="input" rows="5" required></textarea>
+          <textarea id="message" name="message" placeholder="Write something.." class="input" rows="5" required minlength="10"></textarea>
 
           <button class="button--disabled" id="submit">Submit</button>
-          <button class="button--secondary" value="reset" type="reset" id="reset"/>Reset</button
+          <button class="button--secondary" value="reset" type="reset" id="reset">Reset</button>
         </form>
       </section>
       <h2>Or Contact Us This Way!</h2>
@@ -194,9 +197,9 @@
       </div>
       <div class="footer--grid-item">
         <ul>
-          <a href="#home" class="smoothScroll"><li class="footer__listItem">Home</li></a>
-          <a href="#about" class="smoothScroll"><li class="footer__listItem">About</li></a>
-          <a href="#contact" class="smoothScroll"><li class="footer__listItem">Contact</li></a>
+          <li class="footer__listItem"><a href="#home" class="smoothScroll">Home</a></li>
+          <li class="footer__listItem"><a href="#about" class="smoothScroll">About</a></li>
+          <li class="footer__listItem"><a href="#contact" class="smoothScroll">Contact</a></li>
         </ul>
       </div>
       <div class="footer--grid-item">
@@ -205,8 +208,8 @@
         <a href="www.twitter.com"><img src="images/twitter.png" alt="twitter"></a>
       </div>
     </footer>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script src="js/main.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
   </body>
 </html>
